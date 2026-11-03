@@ -1,34 +1,137 @@
-# WindowServer2022Setup
-This is an quick installation guide of Window Server 2022 using Window 10 OS.
 
-#Requirement: 
+# Windows Server 2022 Setup
 
-1. Virtual Box->https://www.virtualbox.org/wiki/Downloads
-2. Window Server 2022 ISO->https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022
+This is a quick installation guide for setting up Windows Server 2022 using VirtualBox on a Windows 10 host operating system.
 
-#StepByStep
+## Requirements
 
-Step 1: Install the hypervisor Virtual Box onto your PC. Once you install, you should see this screen. Click on the icon "New".
- ![img alt](https://github.com/ChangITTech/WindowServer2022Setup/blob/0a3b91c81d4573120d15256fc030f904d8918e52/image/part1.PNG)
+1. [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+2. [Windows Server 2022 ISO](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
 
-Step 2:One you click on "New". These options will be available to customize. For VM Name: I had it ChangServer, you can give any name you want. For the ISO image option, make sure to select the Window Server 2022 ISO, downloaded from above. Finally, uncheck the "Proceed with Unattended Installation", and click "Next" to go to the next page.
+## Step-by-Step Installation Guide
 
-![img alt](https://github.com/ChangITTech/WindowServer2022Setup/blob/db674e77e5965355f34bda791a320d0c076e376b/image/part2.PNG)
+Click on any step below to expand or collapse the installation instructions and screenshots.
 
-Step 3: On this page, we are going to allocate resource from our current PC to the Window Server 2022 VM we are making. It is recommend to allocate "4Gb" of RAM, Base Memory. It is also recommend to allocate 2 CPU. As for size, we are going to allocate 50Gb of storage.
-![img alt](https://github.com/ChangITTech/WindowServer2022Setup/blob/db674e77e5965355f34bda791a320d0c076e376b/image/part3.PNG)
-Step 4: Once, you're down with VM allocation. You Virtual Box Manager should look something like this. From here, we should run the Window server 2022 VM we just made.
-![img alt]https://github.com/ChangITTech/WindowServer2022Setup/blob/db674e77e5965355f34bda791a320d0c076e376b/image/part4.PNG
-Step 5: When you run the fresh Window Server 2022 VM you just made, you should see this follow page. Here we have various option to choose. For this installation we will just "Window Server 2022 Evaluation(Desktop Experience)"
-![img alt](https://github.com/ChangITTech/WindowServer2022Setup/blob/db674e77e5965355f34bda791a320d0c076e376b/image/part5.PNG)
-Step 6: After choosing "Window Server 2022 Evaluation(Desktop) Experience". You will land on this page, and wait for it to image the Window Server 2022 ISO to complete.
-![img alt](https://github.com/ChangITTech/WindowServer2022Setup/blob/db674e77e5965355f34bda791a320d0c076e376b/image/part6.PNG)
-Step 7: Once it finish installing the repositories, you should land on this page. Here you will, you will make your password for the administrator profile.
-![img alt](https://github.com/ChangITTech/WindowServer2022Setup/blob/db674e77e5965355f34bda791a320d0c076e376b/image/part7.PNG)
-Step 8: Congratulation, you have successful made a Window Server 2022 in Virtual Box!
-![img alt](https://github.com/ChangITTech/WindowServer2022Setup/blob/db674e77e5965355f34bda791a320d0c076e376b/image/part8.PNG)
-#Acknowledge and things to consider
+<details>
+<summary><strong>Step 1: Install VirtualBox</strong></summary>
 
-First, I want to give shout to Kevtech IT support. His video installation guide was how I visually learn how to set up VM through Virtual Box. This is just documentation to help refresh my knowledge, incase i need it.
+Install the VirtualBox hypervisor onto your PC. Once installed, open VirtualBox Manager. You should see the following screen.
 
-One of the key fundamental here is understanding how powerful a hypervisor can be.  For this application purpose we just did, it was use to build an Active Directory. But hypervisor is not just limited to creating Active Directory. If needed, I can use an hypervisor on various OS such as macOS and Linux; to create VM with a different OS.
+Click the **New** icon to create a virtual machine.
+
+![VirtualBox Manager](image/part1.PNG)
+
+</details>
+
+<details>
+<summary><strong>Step 2: Configure the Virtual Machine</strong></summary>
+
+After clicking **New**, you will see several configuration options.
+
+- **VM Name:** I named mine "ChangServer," but you can choose any name.
+- **ISO Image:** Select the Windows Server 2022 ISO downloaded earlier.
+- **Unattended Installation:** Uncheck "Proceed with Unattended Installation."
+
+Click **Next** to continue.
+
+![Virtual Machine Configuration](image/part2.PNG)
+
+</details>
+
+<details>
+<summary><strong>Step 3: Allocate VM Resources</strong></summary>
+
+On this page, we will allocate hardware resources from our host PC to the Windows Server 2022 virtual machine.
+
+Recommended lab configuration:
+
+- **Base Memory (RAM):** 4 GB
+- **Processors (CPU):** 2
+- **Virtual Hard Disk:** 50 GB
+
+Make sure your host PC has enough available resources before allocating them to the VM.
+
+![VM Resource Allocation](image/part3.PNG)
+
+</details>
+
+<details>
+<summary><strong>Step 4: Start the Virtual Machine</strong></summary>
+
+Once you finish configuring the virtual machine, your VirtualBox Manager should look similar to the screenshot below.
+
+Select your Windows Server 2022 VM and click **Start** to begin the installation.
+
+![VirtualBox VM Manager](image/part4.PNG)
+
+</details>
+
+<details>
+<summary><strong>Step 5: Select Windows Server Edition</strong></summary>
+
+When you start the new Windows Server 2022 VM, you will be presented with several installation options.
+
+For this tutorial, select:
+
+**Windows Server 2022 Evaluation (Desktop Experience)**
+
+This version provides a graphical user interface (GUI), making it easier to manage Windows Server.
+
+![Windows Server Edition Selection](image/part5.PNG)
+
+</details>
+
+<details>
+<summary><strong>Step 6: Install Windows Server 2022</strong></summary>
+
+After selecting Windows Server 2022 Evaluation (Desktop Experience), continue through the installation process.
+
+Wait for Windows Setup to copy and install the required operating system files.
+
+![Windows Server Installation](image/part6.PNG)
+
+</details>
+
+<details>
+<summary><strong>Step 7: Configure Administrator Password</strong></summary>
+
+Once Windows Server 2022 finishes installing, you will be prompted to create a password for the built-in Administrator account.
+
+Create a strong password and complete the initial setup.
+
+![Administrator Password Setup](image/part7.PNG)
+
+</details>
+
+<details>
+<summary><strong>Step 8: Installation Complete!</strong></summary>
+
+Congratulations! You have successfully installed Windows Server 2022 in VirtualBox.
+
+You now have a Windows Server virtual machine that can be used for hands-on IT infrastructure practice.
+
+Possible next steps include:
+
+- Installing Active Directory Domain Services (AD DS).
+- Promoting the server to a domain controller.
+- Configuring DNS.
+- Creating Active Directory users and groups.
+- Joining client computers to the domain.
+
+![Windows Server 2022 Desktop](image/part8.PNG)
+
+</details>
+
+## Acknowledgments and Things to Consider
+
+I want to give a shout-out to Kevtech IT Support. His video installation guide helped me visually learn how to set up a virtual machine using VirtualBox.
+
+This project serves as documentation to help refresh my knowledge whenever I need to revisit the installation process.
+
+One of the key fundamentals I learned is understanding how powerful a hypervisor can be.
+
+For this project, I installed Windows Server 2022 to prepare a virtual environment for practicing Active Directory.
+
+However, hypervisors are not limited to Windows Server or Active Directory. They can also be used to create virtual machines running other operating systems, such as Linux and supported macOS configurations.
+
+This hands-on project helped me gain practical experience with virtualization, virtual machine configuration, resource allocation, and Windows Server installation.
