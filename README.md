@@ -8,5 +8,8 @@ This is an quick installation guide of Window Server 2022 using Window 10 OS.
 
 #StepByStep
 
-1.Install the hypervisor Virtual Box onto your PC.
+1.Install the hypervisor Virtual Box onto your PC. Once you install, you should see this screen.
+  
+
+
 2.
