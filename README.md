@@ -24,6 +24,10 @@ Step 6: After choosing "Window Server 2022 Evaluation(Desktop) Experience". You 
 
 Step 7: Once it finish installing the repositories, you should land on this page. Here you will, you will make your password for the administrator profile.
 
-Step 8: Congratulation, you have successful make a Window Server 2022 in Virtual Box!
+Step 8: Congratulation, you have successful made a Window Server 2022 in Virtual Box!
 
 #Acknowledge and things to consider
+
+First, I want to give shout to Kevtech IT support. His video installation guide was how I visually learn how to set up VM through Virtual Box. This is just documentation to help refresh my knowledge, incase i need it.
+
+One of the key fundamental here is understanding how powerful a hypervisor can be.  For this application purpose we just did, it was use to build an Active Directory. But hypervisor is not just limited to creating Active Directory. If needed, I can use an hypervisor on various OS such as macOS and Linux; to create VM with a different OS.
