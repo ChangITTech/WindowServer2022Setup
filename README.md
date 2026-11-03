@@ -18,3 +18,12 @@ Step 3: On this page, we are going to allocate resource from our current PC to t
 
 Step 4: Once, you're down with VM allocation. You Virtual Box Manager should look something like this. From here, we should run the Window server 2022 VM we just made.
 
+Step 5: When you run the fresh Window Server 2022 VM you just made, you should see this follow page. Here we have various option to choose. For this installation we will just "Window Server 2022 Evaluation(Desktop Experience)"
+
+Step 6: After choosing "Window Server 2022 Evaluation(Desktop) Experience". You will land on this page, and wait for it to image the Window Server 2022 ISO to complete.
+
+Step 7: Once it finish installing the repositories, you should land on this page. Here you will, you will make your password for the administrator profile.
+
+Step 8: Congratulation, you have successful make a Window Server 2022 in Virtual Box!
+
+#Acknowledge and things to consider
